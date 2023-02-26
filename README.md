@@ -194,3 +194,10 @@ The aggregation works as follows:
 
 The complete list of features was originally created by František Střasák [here](https://dspace.cvut.cz/bitstream/handle/10467/68528/F3-BP-2017-Strasak-Frantisek-strasak_thesis_2017.pdf) and adapted by Pavel Janata [here]().
 
+## Labels
+There are two columns for labels: 
+- `label`: Main label, the vales are `Malicious` or `Benign`.
+- `detailedlabel`: It has more details, such as `External-Attack-to-Device`.
+
+
+**Be careful** that the benign files may also have rows with `malicious` labels because the computer was attacked from the Internet too.
