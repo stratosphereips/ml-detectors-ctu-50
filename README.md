@@ -196,7 +196,7 @@ The complete list of features was originally created by František Střasák [he
 
 ## Labels
 There are two columns for labels: 
-- `label`: Main label, the vales are `Malicious` or `Benign`.
+- `label`: Main label, the vales can be `Malicious`, `Benign` or `Background`.
 - `detailedlabel`: It has more details, such as `External-Attack-to-Device`.
 
 
