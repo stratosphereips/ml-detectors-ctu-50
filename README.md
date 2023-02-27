@@ -197,7 +197,8 @@ The complete list of features was originally created by František Střasák [he
 ## Labels
 There are two columns for labels: 
 - `label`: Main label, the vales can be `Malicious`, `Benign` or `Background`.
-- `detailedlabel`: It has more details, such as `External-Attack-to-Device`.
-
+- `detailedlabel`: It has more details.
+    - For the `Benign` label the options are: `Dropbox`, `ESET`, `Microsoft`.
+    - For the `Malicious` label the opotions are: `External-Attack-to-Device`, `CC`, or `CC-with-MITM-from-analysts`.  
 
 **Be careful** that the benign files may also have rows with `malicious` labels because the computer was attacked from the Internet too.
