@@ -202,3 +202,10 @@ There are two columns for labels:
     - For the `Malicious` label the opotions are: `External-Attack-to-Device`, `CC`, or `CC-with-MITM-from-analysts`.  
 
 **Be careful** that the benign files may also have rows with `malicious` labels because the computer was attacked from the Internet too.
+
+##  Data exploration
+To see how data looks like it's good to check the pair plots in the images directory. Please see that there are multiple plots.
+
+![small pair](images/pair-plot-small2.png)
+
+
