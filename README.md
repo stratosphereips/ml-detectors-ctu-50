@@ -180,6 +180,23 @@ The folders are:
 
 If some day does not have a CSV file is because there was not malware during that day.
 
+## CUDA
+If it happens that the code gives you the error:
+
+    2023-03-06 11:33:24.900108: W tensorflow/compiler/xla/service/gpu/llvm_gpu_backend/gpu_backend_lib.cc:326] libdevice is required by this HLO module but was not found at ./libdevice.10.bc
+    2023-03-06 11:33:24.900325: W tensorflow/core/framework/op_kernel.cc:1830] OP_REQUIRES failed at xla_ops.cc:446 : INTERNAL: libdevice not found at ./libdevice.10.bc
+    ...
+    libdevice not found at ./libdevice.10.bc
+
+It may be because CUDA can not find that library where you have it installed. Try this in your Python
+
+    export XLA_FLAGS=--xla_gpu_cuda_data_dir=/usr/lib/cuda
+
+Or in the case of Jupyter you can do
+
+    import os
+    os.environ['XLA_FLAGS']="--xla_gpu_cuda_data_dir=/usr/lib/cuda"
+
 ## Explanation of which malware and users are in the dataset
 ![Explanation of ctu-50-dataset](ctu-50-features/ctu-50-features.png)
 
